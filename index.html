@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- <script src="//archive.org/includes/athena.js" type="text/javascript"></script> -->
+<!-- <script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app213.us.archive.org';v.server_ms=336;archive_analytics.send_pageview({});});</script> -->
+<!-- <script type="text/javascript" src="https://web-static.archive.org/_static/js/bundle-playback.js?v=1B2M2Y8A" charset="utf-8"></script>
+<script type="text/javascript" src="https://web-static.archive.org/_static/js/wombat.js?v=1B2M2Y8A" charset="utf-8"></script> -->
+<!-- <script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden","showSwfDownload":true};</script> -->
+<!-- <script type="text/javascript" src="https://web-static.archive.org/_static/js/ruffle/ruffle.js"></script> -->
+<!-- <script type="text/javascript">
+    __wm.init("https://web.archive.org/web");
+  __wm.wombat("https://samsunglabs.github.io/SceneGrasp-project-page/","20241106143002","https://web.archive.org/","web","https://web-static.archive.org/_static/",
+	      "1730903402"); -->
+<!-- </script> -->
+<!-- <link rel="stylesheet" type="text/css" href="static/css/banner-styles.css?v=1B2M2Y8A" />
+<link rel="stylesheet" type="text/css" href="static/css/iconochive.css?v=1B2M2Y8A" /> -->
+<!-- End Wayback Rewrite JS Include -->
+
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriately as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="More avatars are created from short monocular videos and can be rendered in real-time (30+ FPS, 640x640px) on mobile devices">
+  <meta property="og:title" content="SceneGrasp"/>
+  <meta property="og:description" content="Real-time Simultaneous Multi-Object 3D Shape Reconstruction, 6DoF Pose Estimation and Dense Grasp Prediction"/>
+  <meta property="og:url" content="https://SceneGrasp.github.io/"/> <!-- TODO(shagrawal) check-->
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <!-- <meta property="og:image" content="static/image/your_banner_image.png"/> -->
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="SceneGrasp">
+  <meta name="twitter:description" content=": Real-time Simultaneous Multi-Object 3D Shape Reconstruction, 6DoF Pose Estimation and Dense Grasp Prediction">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>SceneGrasp</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+  <section class="hero">
+    <div class="hero-body has-text-justified">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Real-time Simultaneous Multi-Object 3D Shape Reconstruction, 6DoF Pose Estimation and Dense Grasp Prediction</h1>
+            <div class="is-size-6 publication-authors">
+              <!-- Paper authors -->
+              <br>
+              <span class="author-block">
+                <div class="author-portrait">
+                  <img class="img-fluid mb-3" src="static/images/avatar/shubham.png" alt="" style="height: 100%;">
+                </div>
+                <a href="https://agshubh.com/" target="_blank">Shubham<br>Agrawal</a>
+              </span>
+              <span class="author-block">
+                <div class="author-portrait">
+                  <img class="img-fluid mb-3" src="static/images/avatar/nikhil.png" alt="" style="height: 100%;">
+                </div>
+                <a href="https://www.nikhilcd.com/" target="_blank">Nikhil <br>Chavan-Dafle</a>
+              </span>
+              <span class="author-block">
+                <div class="author-portrait">
+                  <img class="img-fluid mb-3" src="static/images/avatar/isaac.jpg" alt="" style="height: 100%;">
+                </div>
+                <a href="https://kasai2020.github.io/" target="_blank">Isaac<br>Kasahara</a>
+              </span>
+              <span class="author-block">
+                <div class="author-portrait">
+                  <img class="img-fluid mb-3" src="static/images/avatar/selim.jpeg" alt="" style="height: 100%;">
+                </div>
+                <a href="https://ksengin.github.io/" target="_blank">Selim<br> Engin</a>
+              </span>
+              <span class="author-block">
+                <div class="author-portrait">
+                  <img class="img-fluid mb-3" src="static/images/avatar/jinwook.jpg" alt="" style="height: 100%;">
+                </div>
+                <a href="https://scholar.google.com/citations?user=qLZYuUMAAAAJ&amp;hl=en" target="_blank">Jinwook<br>Huh</a>
+              </span>
+              <span class="author-block">
+                <div class="author-portrait">
+                  <img class="img-fluid mb-3" src="static/images/avatar/volkan.jpg" alt="" style="height: 100%;">
+                </div>
+                <a href="https://www.cs.utexas.edu/~isler/" target="_blank">Volkan<br>Isler</a>
+              </span>
+            </div>
+                  <br>
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><a href="https://research.samsung.com/aicenter_ny" target="_blank">Samsung AI Center - New York</a></span>
+                  </div>
+                  <br>
+
+                  <!-- ArXiv Link -->
+                  <span class="link-block">
+                    <a href="https://arxiv.org/abs/2305.09510" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                  <span class="link-block">
+                    <a href="static/pdfs/SceneGrasp-IROS-23-Poster.pdf" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <svg class="svg-inline--fa fa-file-pdf fa-w-12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-pdf" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z"></path></svg><!-- <i class="fas fa-file-pdf"></i> Font Awesome fontawesome.com -->
+                    </span>
+                    <span>Poster</span>
+                  </a>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/submagr/SceneGrasp" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                  <br>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body has-text-justified">
+      <div class="container">
+        In this paper, we present a real-time method for simultaneous object-level scene understanding and grasp prediction. Specifically, given a single RGBD image of a scene, our method localizes all the objects in the scene and for each object, it generates the following: full 3D shape, scale, pose with respect to the camera frame, and a dense set of feasible grasps.
+      </div>
+      <br>
+      <div class="container">
+        The main advantage of our method is its computation speed as it avoids sequential perception and grasp planning. 
+        With detailed quantitative analysis of reconstruction quality and grasp accuracy, we show that our method delivers competitive performance compared to the state-of-the-art methods while providing fast inference at 30 frames per second speed.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body has-text-justified">
+      <hr>
+      <h2 class="title has-text-centered">Video</h2>
+      <br>
+      <video poster="" id="video1" controls height="100%">
+        <source src="static/videos/main-video.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body has-text-justified">
+      <hr>
+      <h2 class="title has-text-centered">SceneGrasp Architecture</h2>
+      <br>
+      <img src="static/images/sceneGraspNet-architecture.png" alt="Architecture"/>
+      <div class="container">
+        SceneGrasp-Net during <strong>inference</strong> time takes in an RGB and a Depth image (a), and passes them through a ResNet architecture before concatenating the features together. These features are then passed through a Feature Pyramid Network (FPN) to obtain the heatmap (b). Embeddings are extracted at the peaks of the heatmap, and each embedding is then split into 3 parts.  The shape/grasp embedding is concatenated with the scale embedding and passed to the decoder to predict a unit canonical shape and dense grasps (c). This point cloud containing shape/grasp is then scaled and transformed to the camera frame using the pose/scale embedding (d) to obtain our final prediction (e).
+        <br>
+        <br>
+        SceneGrasp <strong>training</strong> consists of two steps:  First, we train ScaleShapeGrasp-AE which is visualized in the figure below. We then train the SceneGrasp-Net (visualized above) using the decoder from the ScaleShapeGrasp-AE.
+      </div>
+      <br>
+      <img src="static/images/scaleAE-architecture.png" alt="Architecture"/>
+      <div class="container">
+        ScaleShapeGrasp-AE learns a combined latent space of shapes and scale-dependent dense grasp parameters. (a) shows the encoder-decoder architecture (b) shows our per-point grasp representation (c) shows the effect of scale on grasp-success predictions without changing the shape. Notice that as the scale increases, the wider parts of the bottle become ungraspable (red points) due to the fixed maximum gripper width and only thinner parts remain graspable (green points).
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body has-text-justified">
+      <hr>
+      <h2 class="title has-text-centered">Real-world Demonstration Videos</h2>
+      <br>
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column">
+            <div class="content"><div class="vsc-controller"></div>
+              <video id="realworld_demo_1_crop" height="100%" autoplay controls muted loop>
+                <source src="static/videos/realworld_demo_1_crop.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+    
+          <div class="column">
+            <div class="columns is-centered">
+              <div class="column content"><div class="vsc-controller"></div>
+                <video id="mrealworld_demo_2_crop" height="100%" autoplay controls muted loop>
+                  <source src="static/videos/realworld_demo_2_crop.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p>
+          The videos above show the <strong>end-to-end scenegrasp pipeline</strong> running in the real-world. In each video, the small window on the left side shows the RGB-D input to our method. On the right-hand side, we can see the detected object instances along with the grasps shown by tiny green grippers in the camera frame. Notice that the <strong>above videos are not sped up</strong> and show real-time performance of our method.
+        </p>
+      </div>
+
+      <div class="container">
+        <video id="realworld_demo_1_crop" autoplay controls muted loop playsinline height="100%">
+          <source src="static/videos/scenegrasp_realworld_combined_videos.mp4" type="video/mp4">
+        </video>
+        The video above (3X speed) shows the performance of our method for the <strong>table clearing scenario</strong>. At the start of every run, an RGB-D
+        image is captured from a Realsense-D435 camera mounted on the Kinova Gen3 arm. The RGB-D image is passed through SceneGrasp
+        model trained on NOCS-Camera and finetuned on NOCS-Real datasets. The Kinova arm then executes the grasps one-by-one for every 
+        detected object. Notice that for the first 5 videos, the robot is successfully able to clear the table. Since <strong>we do not use 
+        any post-processing</strong> (eg. iterative closes point for pose refinement), sometimes the grasp fails for thicker objects, as
+        can be seen in the bottom right video. Note that <strong>none of these objects are observed in our training dataset</strong>. 
+      </div>
+
+      <div class="container">
+        <img src="static/images/qualitative_results.png" alt="Architecture"/>
+        <br>
+        These qualitative results on the NOCS-Real test dataset demonstrate our method's ability to predict quality shapes and grasps. From columns left to right: The input RGBD image, the predicted pose and scale of each object shown as 3D bounding boxes, the predicted success of grasping each predicted point with successful in green and unsuccessful in red, the predicted grasps (grasps only visualized for one object per scene for clarity, but predicted for all), and finally the predicted shapes for all objects.
+      </div>
+  
+      <div class="columns is-centered">
+        <div class="column">
+          <div class="content"><div class="vsc-controller"></div>
+            <video id="realworld_demo_1_crop" height="100%" autoplay muted loop>
+              <source src="static/videos/bottle-scale-ae.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+  
+        <div class="column">
+          <div class="columns is-centered">
+            <div class="column content"><div class="vsc-controller"></div>
+              <video id="mrealworld_demo_2_crop" height="100%" autoplay muted loop>
+                <source src="static/videos/cup-scale-ae.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        The above videos show the results of ScaleShapeGrasp-AE. On the left side of 
+        each video, we see the overlay between the predicted pointcloud and the ground-truth
+        pointcloud. On the right side, we notice that as the scale changes from left
+        to right, the network can predict correct grasp distribution while
+        maintaining the correct shape.
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body has-text-justified">
+      <hr>
+      <h2 class="title has-text-centered">Related Links</h2>
+      <br>
+      <div class="container">
+        We build our method on top of <a href="https://zubair-irshad.github.io/projects/CenterSnap.html" target="_blank">Centersnap architecture</a> which does simultaneous detection
+        and shape prediction. General camera frame 3D reconstruction is challenging.
+        Their key idea was to split the problem into two steps: (a) They first learn a low dimensional latent space of objects in the unit-canonical frame. (b) Then, given an image, they learn to predict this low dimensional embedding, along with scale and pose for full 3D camera frame reconstruction.
+        <br>
+        <br>
+        We use grasp-representation from <a href="https://arxiv.org/abs/2103.14127" target="_blank">Contact-GraspNet</a> which predict per-point grasp parameters for every point in the input pointcloud.
+        We also draw useful insights from <a href="https://arxiv.org/abs/2109.06837" target="_blank">ShellGrasp-Net</a> which does simultaneous camera frame shape reconstruction and grasp prediction for a single segmented object.
+        <br>
+        <br>
+        However, extending these ideas for simultaneously predicting shape and dense grasp parameters is not trivial. There are two main challenges:
+        (a) How to simultaneously learn the grasp and shape? (b) How to predict the grasp parameters that are dependent on the object scale? Please refer to our <a href="https://arxiv.org/abs/2305.09510" target="_blank">paper</a> for more details on how we address these challenges.
+        
+      </div>
+    </div>
+  </div>
+</section>
+      
+<!--BibTex citation -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+      <hr>
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@inproceedings{
+  agrawal2023realtime,
+  title={Real-time Simultaneous Multi-Object 3D Shape Reconstruction, 6DoF Pose Estimation and Dense Grasp Prediction},
+  author={Shubham Agrawal and Nikhil Chavan-Dafle and Isaac Kasahara and Selim Engin and Jinwook Huh and Volkan Isler},
+  booktitle={{IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}},
+  year={2023}
+}</code></pre>
+  </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://web.archive.org/web/20241106143002im_/https://licensebuttons.net/l/by-nc/3.0/88x31.png"/>
+            </a><br/>This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons Attribution-NonCommercial 4.0 International License</a> (CC-BY-NC).
+          </p>
+          <p>
+            This webpage is built with the template from <a href="https://github.com/nerfies/nerfies.github.io" target="_blank">NeRFies</a>. We sincerely thank <a href="https://keunhong.com/" target="_blank">Keunhong Park</a> for developing and open-sourcing this template.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
